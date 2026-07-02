@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McLoving Server</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            background:
+            radial-gradient(circle at top,#2f2f6b,#111827 60%,#050505);
+
+            color:white;
+        }
+
+        .card{
+            width:90%;
+            max-width:700px;
+
+            background:rgba(255,255,255,.08);
+            backdrop-filter:blur(15px);
+
+            border:1px solid rgba(255,255,255,.12);
+
+            border-radius:22px;
+
+            padding:40px;
+
+            text-align:center;
+
+            box-shadow:0 0 40px rgba(0,0,0,.5);
+        }
+
+        .logo{
+            width:100%;
+            max-width:400px;
+            margin-bottom:30px;
+            user-select:none;
+            pointer-events:none;
+        }
+
+        h2{
+            font-size:34px;
+            margin-bottom:15px;
+        }
+
+        p{
+            color:#d1d5db;
+            font-size:18px;
+            line-height:1.6;
+            margin-bottom:35px;
+        }
+
+        .buttons{
+            display:flex;
+            flex-direction:column;
+            gap:18px;
+        }
+
+        .btn{
+            display:block;
+            text-decoration:none;
+            color:white;
+            font-size:21px;
+            font-weight:bold;
+            padding:18px;
+            border-radius:14px;
+            transition:.25s;
+        }
+
+        .minecraft{
+            background:linear-gradient(135deg,#ffbf00,#ff8c00);
+            box-shadow:0 0 20px rgba(255,180,0,.45);
+        }
+
+        .minecraft:hover{
+            transform:translateY(-4px);
+            box-shadow:0 0 35px rgba(255,180,0,.8);
+        }
+
+        .discord{
+            background:linear-gradient(135deg,#5865F2,#4752C4);
+            box-shadow:0 0 20px rgba(88,101,242,.45);
+        }
+
+        .discord:hover{
+            transform:translateY(-4px);
+            box-shadow:0 0 35px rgba(88,101,242,.8);
+        }
+
+        .server-info{
+            margin-top:35px;
+            background:rgba(255,255,255,.05);
+            border-radius:15px;
+            padding:20px;
+        }
+
+        .server-info h3{
+            margin-bottom:15px;
+            color:#ffffff;
+        }
+
+        .server-info p{
+            margin:10px 0;
+            font-size:18px;
+        }
+
+        code{
+            color:#7dd3fc;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        .footer{
+            margin-top:30px;
+            color:#8d8d8d;
+            font-size:14px;
+        }
+
+        @media(max-width:600px){
+
+            h2{
+                font-size:28px;
+            }
+
+            p{
+                font-size:16px;
+            }
+
+            .btn{
+                font-size:18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <img src="title.png" alt="McLoving Server" class="logo">
+
+    <h2>Bienvenido</h2>
+
+    <p>
+        Agrega automáticamente McLoving Server a Minecraft Bedrock Edition o únete a nuestra comunidad de Discord.
+    </p>
+
+    <div class="buttons">
+
+        <a class="btn minecraft"
+        href="minecraft://?addExternalServer=%C2%A76McLoving%20Server%C2%A7r|147.185.221.22:5692">
+
+            Añadir servidor
+
+        </a>
+
+        <a class="btn discord"
+        href="https://discord.gg/VjUxNRKssa"
+        target="_blank">
+
+            Unirse al Discord
+
+        </a>
+
+    </div>
+
+    <div class="server-info">
+
+        <h3>Información del servidor</h3>
+
+        <p>
+            Dirección IP<br>
+            <code>147.185.221.22</code>
+        </p>
+
+        <p>
+            Puerto<br>
+            <code>5692</code>
+        </p>
+
+    </div>
+
+    <div class="footer">
+        Minecraft Bedrock Edition • McLoving Server
+    </div>
+
+</div>
+
+</body>
+
+</html>
